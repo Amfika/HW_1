@@ -1,8 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hi everyone!");
-        System.out.println("My name is Anastasiya Golubeva.");
-        System.out.println("I am a manual QA.");
-        System.out.println("I collect nested dolls=)");
+// 1) Написать программу, выводящую информацию о вас(имя, фамилия, профессия).
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите ваше имя: ");
+        String name = scanner.nextLine();
+        System.out.println("Введите вашу фамилию: ");
+        String surName = scanner.nextLine();
+        System.out.println("Введите вашу должность: ");
+        String profession = scanner.nextLine();
+        System.out.println("Вы ввели: "+"Имя: "+ name + ", Фамилия: " + surName + ", Должность: "+ profession + "." );
     }
 }
